@@ -17,7 +17,8 @@ class ComponentB extends Component {
 
   componentDidMount() {
     console.log("ComponentB in componentDidMount");
-    fetch("https://jsonplaceholder.typicode.com/user/")
+    // fetch("https://jsonplaceholder.typicode.com/user/")
+    fetch("https://jsonplaceholder.typicode.com/users/")
       .then((response) => response.json())
       .then((data) => this.setState({ data }));
   }
