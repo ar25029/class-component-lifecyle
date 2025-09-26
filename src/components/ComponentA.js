@@ -1,5 +1,4 @@
 import { Component } from "react";
-import ComponentB from "./ComponentB";
 
 class ComponentA extends Component {
   constructor() {
@@ -24,7 +23,7 @@ class ComponentA extends Component {
     return (
       <>
         <h1>{this.state.name}</h1>
-        <ComponentB />
+        {/* <ComponentB /> */}
       </>
     );
   }
